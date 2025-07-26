@@ -1,97 +1,88 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+# AI-Powered Social Media Dashboard 📱🧠
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+A cross-platform React Native app demonstrating smart authentication, an infinite social feed, post creation, and AI-assisted development practices.
 
-## Step 1: Start Metro
+---
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## 🚀 Features
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+- 🔐 **Login Authentication** with form validation and persistent state
+- 📲 **Infinite Feed** with pull-to-refresh and smart search
+- 📝 **Post Creation** using a multi-step form
+- 🧠 **Advanced State Management** with Redux Toolkit + RTK Query
+- 🔎 **Search Functionality** with debounce for intelligent filtering
+- ✅ **Logout & Protected Routes**
+- ⚡ Smooth performance and minimalistic UI
 
-```sh
-# Using npm
-npm start
+---
 
-# OR using Yarn
-yarn start
-```
+## 🧰 Tech Stack
 
-## Step 2: Build and run your app
+| Tech | Description |
+|------|-------------|
+| React Native | Cross-platform app development |
+| TypeScript | Type-safe coding |
+| Redux Toolkit + RTK Query | State management & API caching |
+| React Navigation v6 | App routing and navigation |
+| Formik + Yup | Form handling and validation |
+| AsyncStorage | Persistent auth storage |
+| JSONPlaceholder API | Mock social data (posts, users) |
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+---
 
-### Android
+## 🧠 AI Usage Summary
 
-```sh
-# Using npm
-npm run android
+- **Used AI** to scaffold project structure, form validation logic, debounce, and RTK slice examples
+- **Enhanced manually** by writing custom navigation flow, local state logic, and architecture decisions
+- Full documentation: [`AI_Development_Journal.md`](./AI_Development_Journal.md)
 
-# OR using Yarn
-yarn android
-```
+---
 
-### iOS
+## 🧪 How to Run Locally
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+1. Clone the repo  
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+3. Run on Android:
+   ```bash
+   npx react-native run-android
+   ```
 
-```sh
-bundle install
-```
+4. (Optional) Run on iOS:
+   ```bash
+   cd ios && pod install && cd ..
+   npx react-native run-ios
+   ```
 
-Then, and every time you update your native dependencies, run:
+---
 
-```sh
-bundle exec pod install
-```
+## 🌐 API Used
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+- [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
+  - `GET /posts`, `POST /posts`, `GET /users`
 
-```sh
-# Using npm
-npm run ios
+---
 
-# OR using Yarn
-yarn ios
-```
+## 📸 Screens
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+- Login Screen  
+- Feed with Infinite Scroll  
+- Create Post Form  
+- Logout Flow  
+- Search Filter on Feed
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+---
 
-## Step 3: Modify your app
+## 📹 Demo Video
 
-Now that you have successfully run the app, let's make changes!
+_Link to 5–10 minute walkthrough here_
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+---
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+## 📄 License
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+MIT
